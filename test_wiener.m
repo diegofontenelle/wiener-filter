@@ -2,13 +2,13 @@ clear
 clc
 
 % Params
-SNR = 10;
-DELAY = 40;
+SNR = 3;
+DELAY = 7;
 
 % Loading audio files
 
-male_filepath = '~/Documents/UFMA/20161/Estocasticos/Trabalho2/out_male.wav';
-female_filepath = '~/Documents/UFMA/20161/Estocasticos/Trabalho2/out_female.wav';
+male_filepath = 'C:\Users\Thiago\Downloads\Estocasticos\out_male.wav';
+female_filepath = 'C:\Users\Thiago\Downloads\Estocasticos\out_female.wav';
 
 male_audio = audioread(male_filepath);
 female_audio = audioread(female_filepath);
@@ -79,4 +79,4 @@ xlabel('Filtered signal over original female signal')
 
 % Calculating the new SNR of the female audio
 new_snr = calculoSNR(female_audio, filtered_female_signal');
-disp(new_nsnr)
+disp(new_snr)
